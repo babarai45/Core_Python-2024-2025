@@ -8,7 +8,7 @@
 
 
 
-### Python Operaters
+### Python Operates
      Operators are special symbols in Python that carry out arithmetic or logical computation. The value that the operator operates on is called the operand.
      1. Arithmetic Operators(+, -, *, /, %, **, //)
      2. Comparison (Relational) Operators(==, !=, >, <, >=, <=)
@@ -23,3 +23,5 @@
      11. Operator Overloading()
      12. Some important points
 
+### Python Expression :
+    python Expression is Combination of Values,Varibale ,Operates  
