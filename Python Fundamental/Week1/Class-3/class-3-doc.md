@@ -35,7 +35,7 @@
 # Data Types
 - Data types are used to store the data.  
 - There are many data types in python, some of them are: 
-  - And we devide the data types into two categories:
+  - And we device the data types into two categories:
 ###    - Primitive Data Types
     - Primitive Data Types is used to store the single value. 
 ###    - Non-Primitive Data Types
@@ -170,6 +170,8 @@
     - int, float, complex, bool, str, tuple, range, frozenset, bytes
 
 
+#   Pythons have some builtin functions 
+![Builtin functions ](assets/buitin.png)
 
 # Class 3 Assignment
 - Create a variable of each data type.
