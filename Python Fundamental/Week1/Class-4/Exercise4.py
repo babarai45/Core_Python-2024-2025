@@ -111,20 +111,56 @@
 
 #-------------------------------lambda function
 # user_input = list(map(int, input("Enter list of integer separated by space ").split()))
-# result = lambda num, target:
+# target_value = int(input("Enter Target value "))
+# pair = lambda x:[[(x[i],x[j]) for i in range(len(x)) for j in range(i+1,len(x)) if x[i] + x[j] == target_value]] 
+# print(pair(user_input))
+
 
 # --------------------using list comprehension :
-# user_input = input("Enter list of integer separated Space  ").split()
+# user_input = list(map(int,input("Enter list of integer separated Space  ").split()))
 # target_value = int(input("Enter Target Value "))
-# list_of_integer = [int(i) for i in user_input]
-# pair = [list_of_integer[j] * 2 [ for j in (range(i + 1), len(list_of_integer))] list_of_integer[i] for i in range(len(list_of_integer)), ]
+# pair = [(user_input[i],user_input[j]) for i in range(len(user_input)) for j in range(i+1,len(user_input)) if user_input[i] + user_input[j] == target_value]
 # print(pair)
-
 
 # # -------------------- using map function
 # user_input = list(map(int, input("Enter list of integer separated by space ").split()))
-# pair = map(lambda i,j:[if user_input[i]+user_input[j]==target ],user_input)
+# target_value = int(input("Enter Target Value ")) 
+# pair = list(map(lambda x: [(x[i], x[j]) for i in range(len(x)) for j in range(i + 1, len(x)) if x[i] + x[j] == target_value], [user_input]))
 # print(pair)
+
+# ----------------------- using filter function
+# user_input = list(map(int, input("Enter list of integer separated by space ").split()))
+# target_value = int(input("Enter Target Value "))
+# pair = list(filter(lambda x: x[0] + x[1] == target_value, [(user_input[i], user_input[j]) for i in range(len(user_input)) for j in range(i + 1, len(user_input))]))
+# print(pair)
+
+# # ----------------------- using reduce function
+# from functools import reduce
+# user_input = list(map(int, input("Enter list of integer separated by space ").split()))
+# target_value = int(input("Enter Target Value "))
+# pair = reduce(lambda x, y: x + y, [[(user_input[i], user_input[j]) for i in range(len(user_input)) for j in range(i + 1, len(user_input)) if user_input[i] + user_input[j] == target_value]])
+# print(pair)
+
+# -------  using recursion
+def find_pair(num, target):
+    if not num:
+        return []
+    return [(num[0], x) for x in num[1:] if num[0] + x == target] + find_pair(num[1:], target)
+
+
+try:
+    user_input = input('Enter list of integer by space ').split()
+    list_integer = [int(i) for i in user_input]
+    target_value = int(input('Enter target value'))
+    result = find_pair(list_integer, target_value)
+    print(result)
+except ValueError as e:
+    print('Please enter valid integer value', e)
+else:
+    print('No pair found')
+finally:
+    print('Program is completed')
+
 
 # ----------------------- Questions:-4
 
