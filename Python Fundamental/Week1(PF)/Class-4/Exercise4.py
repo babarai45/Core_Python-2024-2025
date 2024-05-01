@@ -142,24 +142,24 @@
 # print(pair)
 
 # -------  using recursion
-def find_pair(num, target):
-    if not num:
-        return []
-    return [(num[0], x) for x in num[1:] if num[0] + x == target] + find_pair(num[1:], target)
+# def find_pair(num, target):
+#     if not num:
+#         return []
+#     return [(num[0], x) for x in num[1:] if num[0] + x == target] + find_pair(num[1:], target)
 
 
-try:
-    user_input = input('Enter list of integer by space ').split()
-    list_integer = [int(i) for i in user_input]
-    target_value = int(input('Enter target value'))
-    result = find_pair(list_integer, target_value)
-    print(result)
-except ValueError as e:
-    print('Please enter valid integer value', e)
-else:
-    print('No pair found')
-finally:
-    print('Program is completed')
+# try:
+#     user_input = input('Enter list of integer by space ').split()
+#     list_integer = [int(i) for i in user_input]
+#     target_value = int(input('Enter target value'))
+#     result = find_pair(list_integer, target_value)
+#     print(result)
+# except ValueError as e:
+#     print('Please enter valid integer value', e)
+# else:
+#     print('No pair found')
+# finally:
+#     print('Program is completed')
 
 
 # ----------------------- Questions:-4
@@ -167,3 +167,37 @@ finally:
 # 4. Write a program that takes a string as input and prints out the string
 # with all the vowels replaced by their bitwise complement, using bitwise
 # operators.
+# def complement_vowels(input_string):
+#     vowels = 'aeiouAEIOU'
+#     result = ''
+#     for char in input_string:
+#         if char in vowels:
+#             # Bitwise complement operation: XOR with 0b1111111 (binary representation of 127)
+#             complement_char = chr(ord(char) ^ 0b11111111)
+#             result += complement_char
+#         else:
+#             result += char
+#     return result
+#
+#
+# input_string = input("Enter a string: ")
+# print("Original string:", input_string)
+# print("String with vowels replaced by their bitwise complement:", complement_vowels(input_string))
+
+
+
+# ----------------------- Questions:-5
+
+# 5. Implement a function that takes a list of integers and returns
+# a new list with all the elements that are
+# not divisible by 3 or 5, using the ternary operator.
+
+def filter_numbers(numbers):
+    return [num for num in numbers if (num % 3 != 0) and (num % 5 != 0)]
+
+# Example usage:
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+filtered_numbers = filter_numbers(numbers)
+print("Original list:", numbers)
+print("Filtered list (not divisible by 3 or 5):", filtered_numbers)
+ 

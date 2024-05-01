@@ -73,25 +73,48 @@
 # ------- using function
 
 
-def positive_integer(x):
-    list_of = []
-    positive_integer_num = []
-    for i in x:
-        list_of.append(int(i))
-    for j in list_of:
-        if j > 0:
-            positive_integer_num.append(j)
-    return positive_integer_num
+# def positive_integer(x):
+#     list_of = []
+#     positive_integer_num = []
+#     for i in x:
+#         list_of.append(int(i))
+#     for j in list_of:
+#         if j > 0:
+#             positive_integer_num.append(j)
+#     return positive_integer_num
 
 
-try:
-    user_input = input("Enter list of integer by space").split()
-    result = positive_integer(user_input)
-    print(result)
+# try:
+#     user_input = input("Enter list of integer by space").split()
+#     result = positive_integer(user_input)
+#     print(result)
 
-except ValueError as e:
-    print("invalid input", e)
-finally:
-    print("program executed ")
+# except ValueError as e:
+#     print("invalid input", e)
+# finally:
+#     print("program executed ")
+
 
 # ----- Question 02:-
+# 3. Create a function that takes a list of strings as input and returns a new
+# list with all the strings that are palindromes, using a while loop and a ternary operator.
+ 
+# SOLUTION 01
+user_inputs =input("Enter list of strings !").split()
+palindron = []
+i=0
+while i< len(user_inputs):
+    valu = user_inputs[i]
+    if valu == valu[::-1]:
+        palindron.append(valu)
+    else:
+        print('not',valu)
+    i+=1
+print(user_inputs)
+print(type(user_inputs))
+for i in user_inputs:
+    print(type(i))
+
+str2='level'
+print(str2[0::])
+print(str2[::-1])
