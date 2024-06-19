@@ -1,0 +1,81 @@
+=======================================================================================================
+1. What is class?
+2. why we need class?
+3. Where we can use class?
+4. How to define class?
+5. How to create object of class?
+6. How to access members of class?
+7. Types of class?
+8. What is object?
+9. Why we need object?
+10. How to create object?
+11. How to access members of object?
+12. What is reference variable?
+13. Why we need reference variable?
+14. How to create reference variable?
+15. Difference between object and reference variable?
+
+=======================================================================================================
+
+1. What is class?
+=> Class is a blueprint or template for creating objects.
+=> Class is a collection of objects.
+=> Class is reference type(Reference type means, it will not store the value, it will store the address of the value)
+= > Class is a user defined data type.
+=> Class is a logical entity(Not a physical entity).
+=> Class is a collection of members(Variables, Methods, Properties, Indexers, Events, Delegates, Constructors, Finalizers, Nested Types)
+
+
+2. Why we need class?
+=> To represent the state and behavior of real world entities in the form of objects.
+=> To create objects.
+=> To create reusable code.
+=> To create modular code.
+=> To create maintainable code.
+=> To create scalable code.
+=> To create testable code and many more.
+
+
+3. Where we can use class?
+
+=> We can use class in the following places.
+1. Windows Application
+2. Web Application
+3. Web Services
+4. WCF( Windows Communication Foundation)
+5. WPF(Windows Presentation Foundation)
+6. Silverlight
+7. Console Application
+8. Mobile Application
+9. Cloud Application
+10. Distributed Application
+11. Game Development
+12. Embedded Systems
+13. Robotics
+14. Artificial Intelligence
+15. Machine Learning
+
+
+4. How to define class?
+
+class ClassName
+{
+    // Members
+}
+
+5. How to create object of class?
+
+objectName = ClassName();
+
+
+
+6. How to access members of class?
+
+obj.MemberName;
+# herre obj is object of class and MemberName is member of class.
+
+7. Types of class?
+
+1. instance Class/Normal Class/Regular Class
+2. Abstract Class/parent Class/Base Class
+3. Sealed Class
