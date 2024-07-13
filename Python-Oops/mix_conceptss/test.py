@@ -36,19 +36,48 @@
 # print(new)
 
 
-# --------------------------------------------------------------------------------
-length = 10               # variable name is length
-width = 20                # variable name is width
-area = length * width     # variable name is area
+# # --------------------------------------------------------------------------------
+# length = 10               # variable name is length
+# width = 20                # variable name is width
+# area = length * width     # variable name is area
 
-print(area)               # variable print by its name area only
+# print(area)               # variable print by its name area only
 
 
 
-class Rectangle:
-    length = 30           # attribute name is length
-    width = 20            # attribute name is width
-    area = length * width # attribute name is area
+# class Rectangle:
+#     length = 30           # attribute name is length
+#     width = 20            # attribute name is width
+#     area = length * width # attribute name is area
 
-r1 = Rectangle()          # object creation
-print(r1.area)            # attribute print by using . operator with object r1
+# r1 = Rectangle()          # object creation
+# print(r1.area)            # attribute print by using . operator with object r1
+
+
+#-----------------diff btw class and functions------------------
+# cdoe by class :
+class boys:
+    def runing(self, name, age):
+        if age >= 10 and  age <=30:
+            return f'{name} is can runing '
+        else:
+            return f'{name} is not runing ' 
+bobj=boys()
+print(bobj.runing('babar',20))
+
+class girls(boys):
+    pass
+gobj=girls()
+print(gobj.runing("alvena" ,5 ))
+
+
+#-------------------- by function 
+def runing(name ,age):
+        if age >= 10 and  age <=30:
+            return f'{name} is can runing '
+        else:
+            return f'{name} is not runing ' 
+boys= runing('babe', 3)
+print(boys)
+girls= runing('samina' ,11)
+print(girls)
