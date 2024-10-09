@@ -16,14 +16,14 @@
 -  first we need operating system to interact with computer hardware component.
 -  like this image
 -  
-![programing working](assests/op.png)
+![programing working](assests/working_operating%20.png)
 -  
 -  and operating system also wrriten in programming language.
 -  then we need a  compiler or interpreter to convert our programming language to machine language.
 -  and complier or interpreter also wrriten in programming language.
    
    - see this image
-![programing working](assests/W-W-H-P.png)
+![programing working](assests/code_to_machinecode.png)
 
 
 ## Main types of programming language
