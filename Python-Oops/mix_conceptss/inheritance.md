@@ -13,13 +13,13 @@ inheritance mean to extend class
 6. Code Organization
 
 # imp 
-1.=> Inheritance is a mechanism in which one class acquires the property of another class.
-2.=> The class which inherits the properties of other is known as subclass (derived class, child class) and the class whose properties are inherited is known as superclass (base class, parent class).
-3.=> Inheritance represents the IS-A relationship which is also known as a parent-child relationship.
-4.=> It is used for code reusability and method overriding.
-5.=> Inheritance is a powerful feature of OOP that allows the properties of one class to be used in another class.
-6.=> private member of the parent class can not be accessed in the child class.
-7.=> AND constructor of the parent class is never extended to the child class although the constructor of the parent class is called in the child class(through super() method).
+- #### 1.=> Inheritance is a mechanism in which one class acquires the property of another class.
+- #### 2.=> The class which inherits the properties of other is known as subclass (derived class, child class) and the class whose properties are inherited is known as superclass (base class, parent class).
+- #### 3.=> Inheritance represents the IS-A relationship which is also known as a parent-child relationship.
+- #### 4.=> It is used for code reusability and method overriding.
+- #### 5.=> Inheritance is a powerful feature of OOP that allows the properties of one class to be used in another class.
+- #### 6.=> private member of the parent class can not be accessed in the child class.
+- #### 7.=> AND constructor of the parent class is never extended to the child class although the constructor of the parent class is called in the child class(through super() method).
 
 
 # -------------- Types of Inheritance ------------>
